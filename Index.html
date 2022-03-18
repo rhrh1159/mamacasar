@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+<link rel="stylesheet" href="css/style.css">
+ 
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="favicon.ico"/> 
+  <!-- reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!-- 구글폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+<!-- 구글 머터리얼 아이콘 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<!-- css -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- 스와이퍼 슬라이드 -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- lodash 로데쉬 (스크롤)-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- gsap 애니메이션 /scroll기능도있음-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js" integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- scroll magic -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1><a href="/"><img src="img/logo.png" alt="MAMACASAR"></a></h1>
+            <h1 class="h1-mo"><a href="/"><img src="img/logo.png" alt="MAMACASAR"></a></h1>
+            <!-- pc-nav -->
+            <nav id="gnb-pc">
+                <ul class="main-menu">
+                    <li class="item">
+                        <div class="item__name"><a href="#">BEST SELLER</a></div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="menu__inner">
+                                    <li><a href="#">NEEKLACE</a></li>
+                                    <li><a href="#">RING</a></li>
+                                    <li><a href="#">BRACELET/ANKLETS</a></li>
+
+                                </ul>
+                               
+                            </div>
+                            <p class="line"></p>
+                        </div>
+                        
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#">NEEKLACE</a></div>
+                      
+                     
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#">RING</a></div>
+                       
+                       
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#">BRACELET</a></div>
+                      
+                     
+                    </li>
+                 
+                </ul>
+            </nav>
+            <div class="log">
+                <ul class="log-in">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">CART</a></li>
+                    <li><a href="#"><span class="material-icons">search</span></a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- mo nav -->
+        <nav id="gnb-mo">
+            <ul class="mainMenu">
+                <li class="item" id="new">
+                    <a href="#new" class="btn">BEST SELLER</a>
+                    <ul class="subMenu">
+                        <li><a href="#">NEEKLACE</a></li>
+                        <li><a href="#">RINGE</a></li>
+                        <li><a href="#">BRACELET</a></li>
+                        <li><a href="#">REXHBITION</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="item" id="brand">
+                    <a href="#brand" class="btn">NEEKLACE</a>
+                    <ul class="subMenu">
+                        <li><a href="#">BOLIA</a></li>
+                        <li><a href="#">CASAAlexis</a></li>
+                        <li><a href="#">TECTA</a></li>
+                        <li><a href="#">SPECTRUM</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="funiture">
+                    <a href="#funiture" class="btn">RINGE</a>
+                    <ul class="subMenu">
+                        <li><a href="#">SOFA</a></li>
+                        <li><a href="#">BED</a></li>
+                        <li><a href="#">CHAIR</a></li>
+                        <li><a href="#">TABLE</a></li>
+                        <li><a href="#">DESK</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="lighting">
+                    <a href="#lighting" class="btn">BRACELET</a>
+                    <ul class="subMenu">
+                        <li><a href="#">what's news4</a></li>
+                        <li><a href="#">preorder</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="exhibition">
+                    <a href="#exhibition" class="btn">EXHBITION</a>
+                    <ul class="subMenu">
+                        <li><a href="#">what's news5</a></li>
+                        <li><a href="#">preorder</a></li>
+                    </ul>
+                </li>
+              
+            </ul>
+        </nav>
+
+        <!-- menu-toggle-btn -->
+        <div class="menu-toggle-btn">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+        </div>
+      
+    </header>
+
+    <!-- Slider main container -->
+       <!-- main-slider -->
+       <section class="main-slider">
+        <h2 class="hidden">swiper-slider</h2>
+       
+<div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="#"><img src="img/slide.jpeg" alt="slide"></a></div>
+  
+    
+   
+    </div>
+  </div>
+  <div class="swiper-prev"><span class="material-icons">arrow_back</span></div>
+  <div class="swiper-next"><span class="material-icons">arrow_forward</span></div>
+  </section>
+  <!-- tab q부분 pc -->
+<section class="inner2 scroll-spy">
+    <h2 class="picture picture1 back-to-position to-right"><img src="/img/MAMA CASAR.png" alt="MAMACASAR"></h2>
+    <div class="tab-inner">
+    <a href="#tab_1" data-tab="tab_1" class="b-nav-tab active">
+        BEST
+      </a>
+      <a href="#tab_2" data-tab="tab_2" class="b-nav-tab">
+        NEW
+      </a>
+    </div>
+      <div id="tab_1" class="b-tab active">
+        <div class="best-item">
+            <div class="best-item__inner">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="/img/best1-1.png" alt="banner1"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/best2-2.png" alt="banner1"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/best3-3.png" alt="banner1"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/best4-4.png" alt="banner1"></a></div>
+            </div>
+           
+            </div>
+            <div class="swiper-prev"><span class="material-icons">arrow_back_ios</span></div>
+          <div class="swiper-next"><span class="material-icons">arrow_forward_ios</span></div>
+          </div>
+          
+        </div>
+          <!-- Add Pagination -->
+       
+        </div>
+      </div>
+      <div id="tab_2" class="b-tab">
+        <div class="best-item">
+            <div class="best-item__inner">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="/img/new1-1.png" alt="banner1"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="/img/sns.png" alt="banner1"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="/img/new2-2.png" alt="banner1"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="/img/sns4.png" alt="banner1"></a></div>
+            </div>
+           
+            </div>
+            <div class="swiper-prev"><span class="material-icons">arrow_back_ios</span></div>
+            <div class="swiper-next"><span class="material-icons">arrow_forward_ios</span></div>
+          </div>
+        
+        </div>
+<!-- 모바일부분 -->
+</section>
+<section class="tav-mo">
+<div class="tav-inner">
+    <a href="#tav_1" data-tab="tav_1" class="b-nav-tav active">
+        BEST
+      </a>
+      <a href="#tav_2" data-tab="tav_2" class="b-nav-tav">
+        NEW
+      </a>
+    </div>
+      <div id="tav_1" class="b-tav active">
+     <!-- 사진 -->
+     <div class="wrapper">
+        <div><img src="img/best1.jpeg" alt="gusee"></div>
+        <div><img src="img/best2-2.png" alt="gusee"></div>
+        <div><img src="img/best1-1.png" alt="gusee"></div>
+        <div><img src="img/best2.jpeg" alt="gusee"></div>
+        <div class="hide"><img src="/img/best3-3.png" alt="gusee"></div>
+        <div class="hide"><img src="/img/best3.jpeg" alt="gusee"></div>
+        <div class="hide"><img src="/img/best4-4.png" alt="gusee"></div>
+        <div class="hide"><img src="/img/best4.jpeg" alt="gusee"></div>
+        <div class="hide"><img src="/img/new1-1.png" alt="gusee"></div>
+        <div class="hide"><img src="/img/new1.jpeg" alt="gusee"></div>
+    
+
+    </div>
+    <div id="moreBtn" onclick="showMore()"><span class="material-icons">expand_more</span></div>
+ 
+          
+        </div>
+  
+      <div id="tav_2" class="b-tav">
+
+      <!-- 사진 -->
+      <div class="wrapper">
+        <div><img src="img/new1-1.png" alt="gusee"></div>
+        <div><img src="img/new1.jpeg" alt="gusee"></div>
+        <div><img src="img/new2-2.png" alt="gusee"></div>
+        <div><img src="img/new2.jpeg" alt="gusee"></div>
+        <div class="hide"><img src="images/guess05.jpg" alt="gusee"></div>
+        <div class="hide"><img src="images/guess06.jpg" alt="gusee"></div>
+        <div class="hide"><img src="images/guess07.jpg" alt="gusee"></div>
+        <div class="hide"><img src="images/guess08.jpg" alt="gusee"></div>
+        <div class="hide"><img src="images/guess09.jpg" alt="gusee"></div>
+        <div class="hide"><img src="images/guess10.jpg" alt="gusee"></div>
+        <div class="hide"><img src="images/guess11.jpg" alt="gusee"></div>
+        <div class="hide"><img src="images/guess12.jpg" alt="gusee"></div>
+
+    </div>
+    <div id="moreBtn" onclick="showMore()"><span class="material-icons">expand_more</span></div>
+        </div>
+        <hr id="line2">
+    </section>
+
+    <!-- 텍스트를 누르면 이미지가 바뀌는 부분 -->
+
+<section class="imghover scroll-spy">
+    <div class="imghover-inner">
+    <div class="text-inner" class="title back-to-position to-right">
+        <nav>
+            <ul class="title back-to-position to-left">
+                <li><a href="#">RINGS</a></li>
+                <li><a href="#">NECKLACES</a></li>
+                <li><a href="#">EARRINGS</a></li>
+                <li><a href="#">BRACELETS / ANKLETS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="img-inner">
+        <a href="#"><img src="img/rings.png" alt="imghover"class="title back-to-position to-right delay-3"></a>
+        <a href="#"><img src="img/neck.png" alt="imghover"class="title back-to-position to-right delay-3"></a>
+        <a href="#"><img src="img/eare.png" alt="imghover"class="title back-to-position to-right delay-3"></a>
+        <a href="#"><img src="img/brace.png" alt="imghover"class="title back-to-position to-right delay-3"></a>
+    </div>
+</div>
+</section>
+<hr id="line">
+<section class="banner scroll-spy">
+    <div class="banner-inner">
+    <h2 class="title back-to-position to-right delay-1" >MAMACASAR?</h2>
+    <div class="text-2">
+        <h4>스페인 감성 브랜드로</h4>
+        <p>매시즌 독특하고 혁신적인<br>
+            컬렉션을 선보인다.</p>
+            <span>DISCOVER MORE <span class="material-icons">arrow_forward</span></span>
+    </div>
+    <img src="/img/banner1.png" class="title back-to-position to-left delay-1"  alt="banner">
+</section>
+<!-- 이미지 고정부분 -->
+<section class="fixed">
+    <h2 class="hidden">고정이미지</h2>
+</div>
+</section>
+<section class="sns scroll-spy">
+    <div class="sns-inner">
+        <h2 class="title back-to-position to-right delay-2">@MAMACASAR</h2>
+        <p >ON INSTAGRAM</p>
+
+        <div class="sns-img">
+            <a href="#" class="title back-to-position to-left delay-1"><img src="img/sns1.png" alt="sns"></a>
+            <a href="#" class="title back-to-position to-left delay-2"><img src="img/sns2.png" alt="sns"></a>
+            <a href="#" class="title back-to-position to-left delay-3"><img src="img/sns3.png" alt="sns"></a>
+            <a href="#" class="title back-to-position to-left delay-2"><img src="img/sns4.png" alt="sns"></a>
+            
+        </div>
+    </div>
+</section>
+    <footer class="footer-pc">
+        
+        <div class="icon1">
+            <a href="#"><img src="img/Vector.png" alt="icon"></a>
+            <a href="#"><img src="img/Vector2.png" alt="icon"></a>
+
+            <a href="#"><img src="img/Vector3.png" alt="icon"></a>
+
+        </div>
+        <div class="footer-inner">
+        <div class="text4">
+            <p>ABOUT MAMA CASAR<br> 이용약관 </p>
+            <p>매장 찾기<br> 환불정책</p>
+            <p>사업자 정보확인</p>
+
+        </div>
+        <address>
+            <a href="/"><img src="img/footerlogo.png" alt="MAMACASAR"></a>
+            <span>회사명: (주)주얼 | 오너: 휴새일 | 개인정보관리책임자 : 류두선 | 전화번호: 822-525-5876 | 이메일: hello@mamacasar.com<br>
+                주소: 서울특별시 강남구 테헤란로 116, 7층, 06233 | 사업자등록번호 : 476-88-00525 | 사업자등록번호: 2018-서울서초-1092 | Sixshop에서 호스팅</span>
+        </address>
+        <div class="copyr">
+            <h1>Copyright © 2020 by MAMA CASAR. Bejewel Inc.</h1>
+        </div>
+    </div>
+    </footer>
+    <!-- 모바일 푸터 -->
+
+    <footer class="footer-mo">
+        
+        <div class="icon1">
+            <a href="#"><img src="img/Vector.png" alt="icon"></a>
+            <a href="#"><img src="img/Vector2.png" alt="icon"></a>
+
+            <a href="#"><img src="img/Vector3.png" alt="icon"></a>
+
+        </div>
+        <div class="footer-inner">
+        <div class="text4">
+            <p>ABOUT MAMA CASAR<br> 이용약관 </p>
+            <p>매장 찾기<br> 환불정책</p>
+            <p>사업자 정보확인</p>
+
+        </div>
+        <address>
+            <a href="/"><img src="img/footerlogo.png" alt="MAMACASAR"></a>
+            <span>회사명: (주)주얼 | 오너: 휴새일 | 개인정보관리책임자 : 류두선 | 전화번호: 822-525-5876 | 이메일: hello@mamacasar.com<br>
+                주소: 서울특별시 강남구 테헤란로 116, 7층, 06233 | 사업자등록번호 : 476-88-00525 | 사업자등록번호: 2018-서울서초-1092 | Sixshop에서 호스팅</span>
+        </address>
+        <div class="copyr">
+            <h1>Copyright © 2020 by MAMA CASAR. Bejewel Inc.</h1>
+        </div>
+    </div>
+    </footer>
+
+
+   
+</body>
+<script src="js/index.js"></script>
+</html>
